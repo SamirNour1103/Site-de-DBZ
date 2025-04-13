@@ -1,6 +1,8 @@
 /*
-#ffeb36 amarelo
-red vermelho
+##fffdff branco
+#dddadd cinza claro
+#bab8ba cinza escuro
+#757375 cinza escuro
 */
 
 *{
@@ -16,11 +18,11 @@ red vermelho
  }
 
 body{
-    background-color: #ffeb36;
+    background-color: #fffdff;
 }
 
 header{
-    background-color: red;
+    background-color: #dddadd;
     padding: 15px 15px 15px 15px;
     width: 100%;
     top: 0;
@@ -40,12 +42,12 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #ffeb36;
+    color: #757375;
     text-decoration: none;
 }
  a:hover{
-    color: red;
-    background-color: #ffeb36;
+    color: #fffdff;
+    background-color:#bab8ba ;
  }
 
  header .container{
@@ -70,4 +72,8 @@ nav ul li a{
         margin-top: 10px;
         flex-direction: column;
     }
+ }
+
+ img{
+    width: 20%;
  }
