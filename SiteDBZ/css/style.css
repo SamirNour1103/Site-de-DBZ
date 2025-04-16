@@ -111,8 +111,12 @@ nav ul li a{
     }
 
     #inicio{
-        margin-top: 150px;
+        margin-top: 160px;
     }
+
+    .logo{
+        width: 60%;
+     }
 
  }
 
