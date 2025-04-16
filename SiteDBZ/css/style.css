@@ -44,6 +44,10 @@ header{
     z-index: 1000 ;
 }
 
+.logo{
+    width: 30%;
+ }
+
 nav ul{
     list-style: none;
     display: flex;
@@ -71,9 +75,28 @@ nav ul li a{
     flex-wrap: wrap;
  }
 
- .logo{
-    font-size: 2em;
-    font-weight: bold;
+ #inicio{
+    margin-top: 130px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff ;
+    text-shadow: 2px 2px 5px #000000;
+ }
+
+ .banner{
+    background: url(../img/bannerDBZ.jpg)  no-repeat center/cover;
+    height: 400px;
+
+ }
+
+ .per1, .per2, .per3{
+    margin-left: 20px;
+ }
+
+ .car1{
+    margin-left: 20px;
  }
 
  @media (max-width: 675px){
@@ -86,16 +109,11 @@ nav ul li a{
         margin-top: 10px;
         flex-direction: column;
     }
+
+    #inicio{
+        margin-top: 150px;
+    }
+
  }
 
- img{
-    width: 25%;
- }
-
- .per1, .per2, .per3{
-    margin-left: 20px;
- }
-
- .car1{
-    margin-left: 20px;
- }
+ 
