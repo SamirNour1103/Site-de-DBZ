@@ -95,6 +95,10 @@ nav ul li a{
 
  }
 
+ section{
+   scroll-margin-top: 120px;
+ }
+
  #sobre{
     padding: 35px;
     background-color:  #dddadd;
