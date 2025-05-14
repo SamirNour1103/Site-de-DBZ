@@ -158,6 +158,10 @@ nav ul li a{
     object-fit: cover;
  }
 
+ .card{
+   width: 70%;
+ }
+
  @media (max-width: 675px){
     header .container, .sobre-container{
         flex-direction: column;
