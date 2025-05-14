@@ -141,6 +141,7 @@ nav ul li a{
     gap: 15px;
     justify-content: center;
     flex: 1;
+   
  }
 
  .hex{
@@ -158,16 +159,52 @@ nav ul li a{
     object-fit: cover;
  }
 
- .card{
-   width: 70%;
+
+ #sagas{
+   background-color: #dddadd;
+   padding-left: 20px;
+   padding-right: 20px;
  }
 
- #saga .container{
+ #sagas .container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(500px, 3fr));
    gap: 20px;
    text-align: center;
    padding: 50px 0;
+ }
+
+ #sagas .item{
+   background-color: #bab8ba;
+   border: 1px solid #c0c0c0;
+   border-radius: 10px;
+   padding: 20px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   transition: transform 0.5 ease; box-shadow:  0.2 ease;
+   cursor: pointer;
+ }
+
+ #sagas .item:hover{
+   transform: translateY(-5px);
+   box-shadow: 0 8px 16px #c0c0c0;
+ }
+
+ #sagas .item:active{
+   transform: scale(0.98);
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+ }
+ 
+ #sagas .item p{
+   margin-top: 15px;
+   font-size: 0.95em;
+   color: #757375;
+ }
+
+ #sagas .imagemcard img {
+   width: 100%;
+   max-width: 400px;
+   height: auto;
+   margin-bottom: 10px;
  }
 
  @media (max-width: 675px){
