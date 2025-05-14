@@ -162,6 +162,11 @@ nav ul li a{
    width: 70%;
  }
 
+ #saga .container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ }
+
  @media (max-width: 675px){
     header .container, .sobre-container{
         flex-direction: column;
