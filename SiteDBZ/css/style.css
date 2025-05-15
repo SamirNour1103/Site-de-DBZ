@@ -75,6 +75,14 @@ nav ul li a{
     flex-wrap: wrap;
  }
 
+ #sobre {
+   scroll-margin-top: 130px;
+}
+
+#sagas, #personagens, #combos{
+   scroll-margin-top: 190px;
+}
+
  .per1, .per2, .per3{
     margin-left: 20px;
  }
@@ -168,7 +176,7 @@ nav ul li a{
 
  #sagas .container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(500px, 3fr));
+   grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
    gap: 20px;
    text-align: center;
    padding: 50px 0;
@@ -207,6 +215,13 @@ nav ul li a{
    margin-bottom: 10px;
  }
 
+ #sagas h1{
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   color: #757375;
+ }
+
  @media (max-width: 675px){
     header .container, .sobre-container{
         flex-direction: column;
@@ -230,6 +245,24 @@ nav ul li a{
         height: 650px;
      }
 
+    #sagas .item{
+      width: 65%;
+    } 
+
+    #sagas .container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+    }
+
+   #sobre {
+      scroll-margin-top: 230px;
+   }
+
+   #sagas, #personagens, #combos{
+      scroll-margin-top: 250px;
+   }
  }
 
  
