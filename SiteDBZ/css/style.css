@@ -232,12 +232,35 @@ nav ul li a{
    color: #F7B733;
  }
 
-.card{
+
+/*Modal*/
+
+.container-btn1{
+   margin-top: 1.2rem;
+}
+
+.container-btn2{
+   margin-top: 1.2rem;
+}
+
+.container-btn3{
+   margin-top: 2rem;
+}
+
+.container-btn4{
+   margin-top: 2rem;
+}
+
+.container-btn5{
+   margin-top: 2rem;
+}
+
+
+.modal{
    background: #F26419;
    padding: 20px;
    border-radius: 12px;
    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-   max-width: 300px;
    margin: auto;
    text-align: center;
 }
@@ -262,10 +285,17 @@ nav ul li a{
    cursor: pointer;
 }
 
+
+.card{
+   background: url(../img/ceu.png)  no-repeat center/cover;;
+   border-radius: 10px;
+}
+
 .modal{
    position: fixed;
    top: 0;
    left: 0;
+   right: 0;
    width: 100vw;
    height: 100vh;
    background: rgba(0, 0, 0, 0.6);
@@ -286,6 +316,17 @@ nav ul li a{
    text-align: center;
    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
+
+.close-btn{
+   margin-top: 20px;
+   display: inline-block;
+   padding: 8px 16px;
+   background-color: #2db9fa;
+   color: #F0F0F0;
+   border-radius: 6px;
+   text-decoration: none;
+}
+
 
  @media (max-width: 675px){
     header .container, .sobre-container{
