@@ -5,6 +5,14 @@
 #757375 cinza escuro
 */
 
+/* 
+Cinza claro (#E0E0E0) – fundo
+Azul celeste (#4FC3F7) – elementos principais
+Laranja queimado (#FF7043) – detalhes
+Branco (#FFFFFF) – base
+Preto suave (#2C2C2C) – texto
+*/
+
 *{
     margin: 0;
     padding: 0;
@@ -16,6 +24,7 @@
 h1{
     padding: 20px;
     font-size: 30px;
+    color: #F7B733;
 }
 
 h2{
@@ -32,11 +41,11 @@ p{
  }
 
 body{
-    background-color: #ffffff;
+    background-color: #F0F0F0;
 }
 
 header{
-    background-color: #c0c0c0;
+    background-color: #F26419;
     padding: 15px 15px 15px 15px;
     width: 100%;
     top: 0;
@@ -60,12 +69,12 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #757375;
+    color: #F0F0F0;
     text-decoration: none;
 }
- a:hover{
-    color: #fffdff;
-    background-color:#bab8ba ;
+ nav a:hover{
+    color: #E94E1B;
+    background-color:#4FC3F7 ;
  }
 
  header .container{
@@ -109,8 +118,8 @@ nav ul li a{
 
  #sobre{
     padding: 35px;
-    background-color:  #dddadd;
-    color: #757375
+    background-color:  #FFFFFF;
+    color: #2C2C2C
  }
 
  .sobre-container{
@@ -157,8 +166,9 @@ nav ul li a{
     height: 120px;
     clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
     overflow: hidden;
-    background-color: #757375;
+    background-color: #4FC3F7;
     position: relative;
+    border: 1px solid #FF7043;
  }
  
  .hex img{
@@ -168,13 +178,13 @@ nav ul li a{
  }
 
 
- #sagas{
-   background-color: #dddadd;
+ #personagens{
+   background-color:  #FFFFFF;
    padding-left: 20px;
    padding-right: 20px;
  }
 
- #sagas .container{
+ #personagens .container{
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
    gap: 20px;
@@ -182,9 +192,9 @@ nav ul li a{
    padding: 50px 0;
  }
 
- #sagas .item{
-   background-color: #bab8ba;
-   border: 1px solid #c0c0c0;
+ #personagens .item{
+   background-color: #F26419;
+   border: 1px solid #4FC3F7;
    border-radius: 10px;
    padding: 20px;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -192,35 +202,90 @@ nav ul li a{
    cursor: pointer;
  }
 
- #sagas .item:hover{
+ #personagens .item:hover{
    transform: translateY(-5px);
-   box-shadow: 0 8px 16px #c0c0c0;
+   box-shadow: 0 8px 16px #4FC3F7;
  }
 
- #sagas .item:active{
+ #personagens .item:active{
    transform: scale(0.98);
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
  }
  
- #sagas .item p{
+ #personagens .item p{
    margin-top: 15px;
    font-size: 0.95em;
-   color: #757375;
+   color: #2C2C2C;
  }
 
- #sagas .imagemcard img {
+ #personagens .imagemcard img {
    width: 100%;
    max-width: 400px;
    height: auto;
    margin-bottom: 10px;
  }
 
- #sagas h1{
+ #personagens h1{
    display: flex;
    text-align: center;
    justify-content: center;
-   color: #757375;
+   color: #F7B733;
  }
+
+.card{
+   background: #F26419;
+   padding: 20px;
+   border-radius: 12px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   max-width: 300px;
+   margin: auto;
+   text-align: center;
+}
+
+ .btn:hover{
+   background-color: #2db9fa;
+   color: #2C2C2C;
+}
+
+.card h3{
+   margin-top: 0;
+}
+
+.btn{
+   display: inline-block;
+   margin-top: 15px;
+   padding: 10px 20px;
+   background: #4FC3F7;
+   color: #F0F0F0;
+   text-decoration: none;
+   border-radius: 6px;
+   cursor: pointer;
+}
+
+.modal{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background: rgba(0, 0, 0, 0.6);
+   display: none;
+   justify-content: center;
+   align-items: center;
+}
+
+.modal:target{
+   display: flex;
+}
+
+.modal-content{
+   background-color: #ffffff;
+   padding: 30px;
+   border-radius: 10px;
+   max-width: 400px;
+   text-align: center;
+   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
 
  @media (max-width: 675px){
     header .container, .sobre-container{
@@ -245,11 +310,11 @@ nav ul li a{
         height: 650px;
      }
 
-    #sagas .item{
+    #personagens .item{
       width: 65%;
     } 
 
-    #sagas .container{
+    #personagens .container{
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
