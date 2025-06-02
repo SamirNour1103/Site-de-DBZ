@@ -186,7 +186,7 @@ nav ul li a{
 
  #personagens .container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
+   grid-template-columns: repeat(auto-fit, minmax(250px, 5fr));
    gap: 20px;
    text-align: center;
    padding: 50px 0;
@@ -315,6 +315,7 @@ nav ul li a{
    max-width: 400px;
    text-align: center;
    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+   margin-top: 150px;
 }
 
 .close-btn{
@@ -369,6 +370,20 @@ nav ul li a{
    #sagas, #personagens, #combos{
       scroll-margin-top: 250px;
    }
+
+   .modal-content{
+      font-size: 0.8em;
+      margin-top: 220px;
+   }
  }
 
+
+ @media (max-width: 347px){
+
+   .modal-content{
+      font-size: 0.69em;
+      margin-top: 220px;
+   }
+
+ }
  
