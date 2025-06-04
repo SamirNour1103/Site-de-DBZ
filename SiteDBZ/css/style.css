@@ -17,7 +17,9 @@ Preto suave (#2C2C2C) – texto
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Reggae One", system-ui;
+    font-weight: 400;
+    font-style: normal;
     scroll-behavior: smooth;
 }
 
@@ -309,11 +311,13 @@ nav ul li a{
 }
 
 .modal-content{
+   max-height: 90vh;
+   overflow-y: auto;
    background-color: #ffffff;
    padding: 30px;
    border-radius: 10px;
-   max-width: 400px;
-   text-align: center;
+   max-width: 700px;
+    text-align: center;
    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
    margin-top: 150px;
 }
@@ -371,19 +375,12 @@ nav ul li a{
       scroll-margin-top: 250px;
    }
 
-   .modal-content{
-      font-size: 0.8em;
-      margin-top: 220px;
-   }
- }
+   .modal{
+      margin-top: 50px;
+  } 
 
-
- @media (max-width: 347px){
-
-   .modal-content{
-      font-size: 0.69em;
-      margin-top: 220px;
-   }
+  .modal-content{
+      max-height: 60vh;
+  } 
 
  }
- 
