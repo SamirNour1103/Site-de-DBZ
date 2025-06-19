@@ -129,6 +129,17 @@ nav ul li a{
     color: #2C2C2C
  }
 
+ .sobre-texto h4{
+   font-size: 0.8em;
+   margin-top: 45px;
+   text-align: justify;
+ }
+
+ .sobre-texto a{
+   text-decoration: none;
+   color: #F26419;
+ }
+
  .sobre-container{
     display: flex;
     justify-content: space-between;
