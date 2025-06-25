@@ -258,21 +258,27 @@ nav ul li a{
    justify-content: center;
  }
 
-.foto-galeria{ 
-   display: grid; 
-   grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
-   gap: 20px; 
-   padding: 70px;
-   margin: 0 auto; 
-} 
-.imgaleria img { 
-   width: 100%; 
-   height: auto; 
-   border-radius: 10px; 
-   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
-   transition: transform 0.3s ease; 
-   border: 4px solid #F26419; 
-} 
+.foto-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 3fr));
+    max-width: 100%;
+    gap: 20px;
+    padding: 70px;
+    margin: 0 auto;
+}
+
+
+.imgaleria img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    border: 4px solid #F26419;
+}
+
+
 .imgaleria img:hover {
     transform: scale(1.05); 
    }
