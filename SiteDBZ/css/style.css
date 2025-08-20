@@ -208,16 +208,16 @@ nav ul li a{
    background-color:  #FFFFFF;
    padding-left: 20px;
    padding-right: 20px;
-   margin-left: 30px;
-   margin-right: 30px;
+   margin-left: 50px;
+   margin-right: 50px;
  }
 
  #personagens .container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
+   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
    gap: 20px;
    text-align: center;
-   padding: 50px 0;
+   padding: 20px 0;
  }
 
  #personagens .item{
@@ -228,6 +228,7 @@ nav ul li a{
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
    transition: transform 0.5 ease; box-shadow:  0.2 ease;
    cursor: pointer;
+   width: 90%;
  }
 
  #personagens .item:hover{
@@ -247,8 +248,8 @@ nav ul li a{
  }
 
  #personagens .imagemcard img {
-   width: 100%;
-   max-width: 400px;
+   width: 80%;
+   max-width: 300px;
    height: auto;
    margin-bottom: 10px;
  }
@@ -380,6 +381,52 @@ nav ul li a{
    padding: 20px;
 }
 
+#tabela{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.tabela-container {
+   width: 100%;
+   max-width: 900px;
+   overflow-x: auto; /* deixa responsivo em telas menores */
+   border-radius: 12px;
+   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+   background: white;
+ }
+
+ table {
+   width: 100%;
+   border-collapse: collapse;
+   text-align: left;
+   
+ }
+
+ table, th, td {
+   border: 2px solid #ff9800; 
+   border-collapse: collapse; 
+ }
+
+ thead {
+   background: #ff9800;
+   color: white;
+ }
+
+ th, td {
+   padding: 14px;
+   border-bottom: 1px solid #ddd;
+ }
+
+ tbody tr:nth-child(even) {
+   background: #f9f9f9;
+ }
+
+ tbody tr:hover {
+   background: #ffe0b2;
+   transition: 0.3s;
+ }
 
 
 
